@@ -1,0 +1,20 @@
+.triangle {
+  background: no-repeat url("../../assets/images/answer-240.png");
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 125px;
+  left: 129px;
+  z-index: 10;
+  height: 222px;
+  width: 220px;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* .triangleFade {
+  opacity: 0.1;
+} */
+
+

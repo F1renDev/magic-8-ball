@@ -1,0 +1,17 @@
+.answer {
+  font-size: 1.3rem;
+  height: 100px;
+  left: 54px;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 15px 7px;
+  position: absolute;
+  top: 50px;
+  width: 120px;
+  z-index: 20;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

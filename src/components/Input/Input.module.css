@@ -1,0 +1,24 @@
+.inputDiv {
+  margin: 50px auto;
+  min-width: 400px;
+  padding: 50px 0 0 0;
+  text-align: center; 
+}
+
+.inputForm {
+  margin: 0;
+  padding: 0;
+}
+
+.inputField {
+  border: none;
+  border-bottom: 2px solid #2a1b98;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  margin: 0 auto;
+  outline: none;
+  padding: 5px 0;
+  text-align: center;
+  width: 500px;
+}

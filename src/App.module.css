@@ -1,0 +1,11 @@
+.app {
+  text-align: center;
+  min-width: 300px;
+}
+
+.centeredAnchor {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}

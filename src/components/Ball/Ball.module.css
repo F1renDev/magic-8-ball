@@ -1,0 +1,10 @@
+.ball {
+  margin: 50px auto;
+  top: 40px;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background: no-repeat url("../../assets//images//8-ball-initial-500.png");
+  z-index: 0;
+}
