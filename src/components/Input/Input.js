@@ -1,27 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "./Input.module.css";
 import Button from "../Button/Button";
 
 const Input = (props) => {
-  const [inputState, setInputState] = useState("");
-
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.submitted();
+    props.setFading();
+    props.tempPredictionToEmptyString();
+    setTimeout(() => {
+      props.submitted();
+      props.setFading();
+    }, 500);
   };
 
   const handleClear = (event) => {
     event.preventDefault();
-    setInputState("");
+    props.clearUserInput();
   };
 
   return (
     <div className={styles.inputDiv}>
       <div className={styles.inputForm}>
         <input
-          onChange={(event) => setInputState(event.target.value)}
-          value={inputState}
+          onChange={(event) => props.handleUserInput(event)}
+          value={props.userInput}
           className={styles.inputField}
           type='text'
         />

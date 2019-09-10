@@ -25,10 +25,13 @@ const predictions = [
 
 const randomPrediction = () => {
   return predictions[Math.floor(Math.random() * predictions.length)];
-}
+};
 
 const initialState = {
-  prediction: randomPrediction()
+  // prediction: randomPrediction(),
+  prediction: "Click for answer",
+  userInput: "",
+  fading: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -37,6 +40,26 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         prediction: randomPrediction()
+      };
+    case actionTypes.TEMPORARY_SET_PREDICTION_TO_EMPTY_STRING:
+      return {
+        ...state,
+        prediction: ""
+      };
+    case actionTypes.SET_FADING:
+      return {
+        ...state,
+        fading: !state.fading
+      };
+    case actionTypes.HANDLE_USER_INPUT:
+      return {
+        ...state,
+        userInput: action.nextLetter
+      };
+    case actionTypes.CLEAR_USER_INPUT:
+      return {
+        ...state,
+        userInput: ""
       };
     default:
       return state;
