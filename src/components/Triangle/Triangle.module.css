@@ -10,11 +10,11 @@
   height: 222px;
   width: 220px;
   cursor: pointer;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* .triangleFade {
-  opacity: 0.1;
-} */
+.triangleFade {
+  opacity: 0;
+}
 
 

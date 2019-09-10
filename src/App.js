@@ -9,6 +9,7 @@ import * as actions from "./store/actions/actions";
 class App extends React.Component {
   handleSubmit = () => {
     this.props.onChangePrediction();
+    
   };
 
   render() {
