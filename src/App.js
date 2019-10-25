@@ -11,6 +11,9 @@ class App extends React.Component {
     this.props.onChangePrediction();
   };
 
+
+
+
   render() {
     return (
       <React.Fragment>
