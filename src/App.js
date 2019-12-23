@@ -37,7 +37,7 @@ class App extends React.Component {
           />
         </div>
         <div className={styles.centeredAnchor}>
-          <a href='https://en.wikipedia.org/wiki/Magic_8-Ball'>
+          <a href="https://en.wikipedia.org/wiki/Magic_8-Ball">
             Learn more about the Magic 8 Ball
           </a>
         </div>
@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     currentPrediction: state.prediction,
     userInput: state.userInput,
@@ -54,10 +54,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     onChangePrediction: () => dispatch(actions.changePrediction()),
-    onHandleUserInput: (event) => dispatch(actions.handleUserInput(event)),
+    onHandleUserInput: event => dispatch(actions.handleUserInput(event)),
     onClearUserInput: () => dispatch(actions.clearUserInput()),
     onSetFading: () => dispatch(actions.setFading()),
     onTemporarySetPredictionToEmptyString: () =>
@@ -65,7 +65,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
