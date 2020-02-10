@@ -2,7 +2,7 @@ import React from "react";
 import Triangle from "../Triangle/Triangle";
 import styles from "./Ball.module.css";
 
-const ball = (props) => (
+const ball = props => (
   <div className={styles.ball}>
     <Triangle
       tempPredictionToEmptyString={props.tempPredictionToEmptyString}

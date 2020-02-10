@@ -6,7 +6,7 @@ export const changePrediction = () => {
   };
 };
 
-export const handleUserInput = (event) => {
+export const handleUserInput = event => {
   return {
     type: actionTypes.HANDLE_USER_INPUT,
     nextLetter: event.target.value

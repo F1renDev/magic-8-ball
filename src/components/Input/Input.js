@@ -3,8 +3,8 @@ import React from "react";
 import styles from "./Input.module.css";
 import Button from "../Button/Button";
 
-const Input = (props) => {
-  const handleSubmit = (event) => {
+const Input = props => {
+  const handleSubmit = event => {
     event.preventDefault();
     props.setFading();
     props.tempPredictionToEmptyString();
@@ -14,7 +14,7 @@ const Input = (props) => {
     }, 500);
   };
 
-  const handleClear = (event) => {
+  const handleClear = event => {
     event.preventDefault();
     props.clearUserInput();
   };
@@ -23,10 +23,10 @@ const Input = (props) => {
     <div className={styles.inputDiv}>
       <div className={styles.inputForm}>
         <input
-          onChange={(event) => props.handleUserInput(event)}
+          onChange={event => props.handleUserInput(event)}
           value={props.userInput}
           className={styles.inputField}
-          type='text'
+          type="text"
         />
         <Button submitted={handleClear} clear>
           Clear

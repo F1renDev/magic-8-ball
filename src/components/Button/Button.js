@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const button = (props) => {
+const button = props => {
   let clearBtn =
     props.children === "Clear"
       ? { color: "#2a1b98", backgroundColor: "#FFF" }
@@ -11,7 +11,8 @@ const button = (props) => {
     <button
       onClick={props.submitted}
       style={clearBtn}
-      className={styles.button}>
+      className={styles.button}
+    >
       {props.children}
     </button>
   );
