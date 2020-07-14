@@ -1,0 +1,14 @@
+.Footer {
+  border-top: 1px solid black;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  min-width: 500px;
+  min-height: 8vh;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
